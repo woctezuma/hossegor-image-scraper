@@ -1,8 +1,8 @@
 files: \.(py|json)$
-default_stages: [commit, manual]
+default_stages: [Nonepre-commitNone, manual]
 repos:
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.6.7
+    rev: v0.6.9
     hooks:
       - id: ruff
         args:
@@ -34,7 +34,7 @@ repos:
         stages: [manual]
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v5.0.0
     hooks:
       - id: pretty-format-json
         args: [--autofix, --no-ensure-ascii]
